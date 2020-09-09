@@ -1,0 +1,39 @@
+/* .content {
+    position: relative;
+    width: 100%;
+    display: table;
+} */
+.sidebarleft {
+  height: 100vh;
+  background-color: blue;
+}
+.sidebarright {
+  height: 100vh;
+  background-color: blue;
+}
+/* .main {
+    position: relative;
+    margin-left: 250px;
+    float: left;
+} */
+/* header.primary
+{
+    width: 100%;
+    height: 100px;
+    background: #313131;
+} */
+/* p{
+  padding: 0;
+} */
+.sidebarleft p{
+  position: absolute;
+  transform: rotate(-90deg);
+  top: 50%;
+  color: white;
+}
+.sidebarright p{
+  position: absolute;
+  transform: rotate(90deg);
+  top: 50%;
+  color: white;
+}
