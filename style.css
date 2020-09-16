@@ -4,8 +4,8 @@ scroll-behavior: smooth;
 body{
   margin : 20px;
 }
+
 .sidebar {
-  position: fixed;
   height: 100vh;
   background-color: #37474F;
   /* display: flex;

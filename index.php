@@ -6,7 +6,7 @@ include('header.php');
     <h1 class="text-center">Julie BOULENGER - Developpeuse web</h1>
   </div>
 </header> -->
-
+<section class="container">
   <div class="row m-0">
     <div class="sidebar sidebarleft">
       <div>
@@ -62,24 +62,64 @@ include('header.php');
       </div>
     </div>
   </div>
+  <div class="container">
+  <h2 id="contact">Contact</h2>
 
-<div class="container">
-
-<h2 id="contact">Contact</h2>
-
-<form>
-  <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Adresse Email</label>
-    <input type="email" class="form-control" id="EmailContact" placeholder="name@example.com" required>
+  <form action="index.php" method="post">
+    <div class="mb-3">
+      <label class="form-label">Nom Prénom</label>
+      <input type="text" class="form-control" name="nomContact" id="nomContact" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Adresse Email</label>
+      <input type="email" class="form-control" name="emailContact" id="emailContact" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Sujet</label>
+      <input type="text" class="form-control" name="sujetContact" id="sujetContact" required>
+    </div>
+    <div class="mb-3">
+      <label class="form-label">Votre message</label>
+      <textarea class="form-control" name="textContact" id="textContact" rows="3" required></textarea>
+    </div>
+    <button type="submit" class="btn btnContact">Me contacter</button>
+  </form>
   </div>
-  <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Votre message</label>
-    <textarea class="form-control" id="TextContact" rows="3" required></textarea>
-  </div>
-  <button type="submit" class="btn btnContact">Me contacter</button>
-</form>
-</div>
 
+<?php
+if(isset($_POST['nomContact']) && isset($_POST['emailContact']) && isset($_POST['sujetContact']) && isset($_POST['textContact'])){
+  if (!empty($_POST['nomContact']) && !empty($_POST['emailContact']) && !empty($_POST['sujetContact']) && !empty($_POST['textContact'])){
+    $nom = $_POST['nomContact'];
+    $nom = check($nom);
+    $mail = $_POST['emailContact'];
+    $msg = $_POST['textContact'];
+    $subject = $_POST['sujetContact'];
+    $dest = "j.boulenger@codeur.online";
+    $sujet = check($subject);
+    $corp = check($msg);
+    $headers = "From: ". $mail;
+    $mailheaders = "From: $mail\n";
+    $mailheaders .= "MIME-version: 1.0\n";
+    $mailheaders .= "Content-type: text/html; charset= utf-8\n";
+
+       if (mail($dest, $sujet, $corp, $headers))  {
+        echo "Email envoyé avec succès";
+        } else {
+        echo "Échec de l'envoi de l'email...";
+        }
+  }else{
+    echo 'Veuillez renseigner tous les champs.';
+  }
+}
+
+function check($input){
+  trim($input);
+  stripslashes($input);
+  htmlspecialchars($input);
+  return $input;
+}
+ ?>
+</section>
 
 <?php
 include('footer.php');
