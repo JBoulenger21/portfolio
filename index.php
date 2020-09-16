@@ -1,11 +1,11 @@
 <?php
 include('header.php');
 ?>
-<!-- <header>
+<header>
   <div class="container">
     <h1 class="text-center">Julie BOULENGER - Developpeuse web</h1>
   </div>
-</header> -->
+</header>
 <section class="container">
   <div class="row m-0">
     <div class="sidebar sidebarleft">
