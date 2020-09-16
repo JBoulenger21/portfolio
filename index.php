@@ -8,8 +8,8 @@ include('header.php');
 </header> -->
 
   <div class="row m-0">
-    <div class="col-1 sidebar sidebarleft mx-auto p-0">
-      <div class="mb-0">
+    <div class="sidebar sidebarleft ">
+      <div class="">
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link " href="#">Accueil</a>
@@ -29,7 +29,7 @@ include('header.php');
         </ul>
       </div>
     </div>
-      <div class="content col-10 p-0">
+      <div class="content p-0">
         <div class="container">
           <div class="main">
             <h1 class="text-center">PORTFOLIO</h1>
@@ -43,11 +43,11 @@ include('header.php');
           </div>
         </div>
       </div>
-      <div class="col-1 sidebar sidebarright mx-auto p-0">
+      <div class="sidebar sidebarright mx-auto p-0">
         <ul>
-          <li>LinkedIn</li>
-          <li>GitHub</li>
-          <li>CV</li>
+          <li><a href="https://www.linkedin.com/in/julieboulenger21/" target="_blank">LinkedIn</a></li>
+          <li><a href="https://github.com/JBoulenger21" target="_blank">GitHub</a></li>
+          <li><a href="ressources/CV_Julie_BOULENGER_Dev.pdf" download="CV Julie Boulenger" target="_blank">CV</a></li>
         </ul>
       </div>
   </div>
@@ -58,14 +58,14 @@ include('header.php');
 
 <form>
   <div class="mb-3">
-    <label for="exampleFormControlInput1" class="form-label">Email address</label>
-    <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com" required>
+    <label for="exampleFormControlInput1" class="form-label">Adresse Email</label>
+    <input type="email" class="form-control" id="EmailContact" placeholder="name@example.com" required>
   </div>
   <div class="mb-3">
-    <label for="exampleFormControlTextarea1" class="form-label">Example textarea</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" required></textarea>
+    <label for="exampleFormControlTextarea1" class="form-label">Votre message</label>
+    <textarea class="form-control" id="TextContact" rows="3" required></textarea>
   </div>
-  <button type="submit" class="btn btn-primary">Me contacter</button>
+  <button type="submit" class="btn btnContact">Me contacter</button>
 </form>
 </div>
 
