@@ -93,4 +93,8 @@ body{
     margin: auto;
     width: 40vh;
   }
+  .logocontact{
+    width: 30px;
+    height: 30px;
+  }
 }
