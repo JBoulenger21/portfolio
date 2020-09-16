@@ -46,7 +46,41 @@ include('header.php');
           <h3 id="competences">Compétences</h3>
           <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
           <h3 id="projects">Projets</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+            <div class="row projetcentrer">
+              <div class="card col-lg-4" style="width: 18rem;">
+                <div class="card-header">
+                  Projet BlueEasy
+                </div>
+                <img src="ressources/blueasy.PNG" class="card-img-top" alt="Intégration de la maquette blue easy">
+                <div class="card-body">
+                  <h5 class="card-title">Intégration</h5>
+                  <p class="card-text">Intégration à partir d'une maquette en utilisant HTML5 et CSS.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-lg-4" style="width: 18rem;">
+                <div class="card-header">
+                  Projet Explorateur de Fichiers
+                </div>
+                <img src="ressources/explofichiers.PNG" class="card-img-top" alt="Exporateur de fichier en PHP">
+                <div class="card-body">
+                  <h5 class="card-title">Developpement application web</h5>
+                  <p class="card-text">Développement d'un explorateur de fichiers style windows à l'aide de PHP.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+              <div class="card col-lg-4" style="width: 18rem;">
+                <div class="card-header">
+                  Projet ACSCAPE
+                </div>
+                <img src="ressources/logo-bleu.png" class="card-img-top" alt="logo ACSCAPE">
+                <div class="card-body">
+                  <h5 class="card-title">Projet fullstack</h5>
+                  <p class="card-text">Developpement d'un EscapeGame Managment System (EGMS) en mode projet.</p>
+                  <a href="#" class="btn btn-primary">Go somewhere</a>
+                </div>
+              </div>
+          </div>
         </div>
       </div>
     </div>
@@ -97,19 +131,18 @@ if(isset($_POST['nomContact']) && isset($_POST['emailContact']) && isset($_POST[
     $dest = "j.boulenger@codeur.online";
     $sujet = check($subject);
     $corp = check($msg);
-    $headers = "From: ". $mail;
     $mailheaders = "From: $mail\n";
     $mailheaders .= "MIME-version: 1.0\n";
     $mailheaders .= "Content-type: text/html; charset= utf-8\n";
 
-       if (mail($dest, $sujet, $corp, $headers))  {
+       if (mail($dest, $sujet, 'Nom : '.$nom.'<br>'.$corp, $mailheaders))  {
         echo "Email envoyé avec succès";
         } else {
         echo "Échec de l'envoi de l'email...";
         }
-  }else{
-    echo 'Veuillez renseigner tous les champs.';
-  }
+        }else{
+          echo 'Veuillez renseigner tous les champs.';
+        }
 }
 
 function check($input){
