@@ -45,7 +45,7 @@ body{
     flex:1;
 }
 .sidebar span{
-  color: #37474F;
+  opacity:0;
 }
 .sidebarleft .item{
   transform: rotate(-90deg) translate(-50%, 0%);
@@ -85,7 +85,19 @@ body{
 .projetcentrer{
   display: flex;
   justify-content: space-between;
+  align-items: center;
   margin: auto;
+}
+.iconeComp{
+  width: 2rem;
+  height: 2rem;
+}
+.logoCompetences img{
+  height:5rem;
+  width: 5rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 @media screen and (max-width: 640px) {
   .sidebar{
