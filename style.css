@@ -92,13 +92,18 @@ body{
   width: 2rem;
   height: 2rem;
 }
+.logoCompetences{
+  width: 80vh;
+  height: auto;
+}
 .logoCompetences img{
   height:5rem;
   width: 5rem;
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
   justify-content: space-between;
+  align-items: center;
 }
+
 @media screen and (max-width: 640px) {
   .sidebar{
     width: 40px;

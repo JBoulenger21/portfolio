@@ -43,7 +43,7 @@ include('header.php');
           <div class="item"><a href="https://github.com/JBoulenger21" target="_blank"><img class="logocontact" src="ressources/github.png" alt="github logo"></img></a></div>
       </div>
       <div>
-          <div class="item"><a href="ressources/CV_Julie_BOULENGER_Dev.pdf" download="CV Julie Boulenger" target="_blank">CV</a></div>
+          <div class="item"><a href="ressources/CV_Julie_BOULENGER_DevWeb.pdf" download="CV Julie Boulenger" target="_blank">CV</a></div>
       </div>
     </div>
     <div class="content p-0">
@@ -52,7 +52,7 @@ include('header.php');
           <h1 class="text-center">PORTFOLIO</h1>
           <h2>Venez découvrir mon univers !</h2>
           <div class="d-flex justify-content-center" >
-            <img src="ressources/avatar3.png" alt="Avatar Julie Boulenger moitié dessin moitié photo">
+            <img src="ressources/avatartest3bis.png" alt="Avatar Julie Boulenger moitié dessin moitié photo">
           </div>
           <h3 id="about">A propos</h3>
           <p></p>
@@ -81,34 +81,34 @@ include('header.php');
                 </div>
               </div>
               <div class="card col-lg-4 mb-4" style="width: 20rem;">
-                <div class="card-header">
-                  Projet Explorateur de Fichiers
+                <div class="card-header d-flex justify-content-center">
+                  <img class="iconeComp" src="ressources/logoPhpnb.png" onmouseover="this.src='ressources/logoPhp.png'" onmouseout="this.src='ressources/logoPhpnb.png'" alt="logo PHP">
                 </div>
                 <img src="ressources/explofichiers.PNG" class="card-img-top" alt="Exporateur de fichier en PHP">
                 <div class="card-body">
-                  <h5 class="card-title">Developpement application web</h5>
+                  <h5 class="card-title">Projet Explorateur de Fichiers</h5>
                   <p class="card-text">Développement d'un explorateur de fichiers style windows à l'aide de PHP.</p>
                   <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary">Repository GitHub</a>
                 </div>
               </div>
               <div class="card col-lg-4 mb-4" style="width: 20rem;">
-                <div class="card-header">
+                <div class="card-header d-flex justify-content-center">
                   Projet ACSCAPE
                 </div>
                 <img src="ressources/logo-bleu.png" class="card-img-top" alt="logo ACSCAPE">
                 <div class="card-body">
-                  <h5 class="card-title">Projet fullstack</h5>
+                  <h5 class="card-title">Projet ACSCAPE</h5>
                   <p class="card-text">Developpement d'un EscapeGame Managment System (EGMS) en mode projet.</p>
                   <a href="https://github.com/ACSCAPE" target="_blank" class="btn btn-primary">Organisation GitHub</a>
                 </div>
               </div>
               <div class="card col-lg-4 mb-4" style="width: 20rem;">
-                <div class="card-header">
-                  Flappy Bird
+                <div class="card-header d-flex justify-content-center">
+                  <img class="iconeComp" src="ressources/js-logonb.png" onmouseover="this.src='ressources/js-logo.png'" onmouseout="this.src='ressources/js-logonb.png'" alt="logo PHP">
                 </div>
-                <img src="ressources/logo-bleu.png" class="card-img-top" alt="logo ACSCAPE">
+                <img src="ressources/flappybird.PNG" class="card-img-top" alt="logo ACSCAPE">
                 <div class="card-body">
-                  <h5 class="card-title">Découverte de Js</h5>
+                  <h5 class="card-title">Flappy Bird</h5>
                   <p class="card-text">Developpement d'un Flappy Bird en full Js.</p>
                   <a href="https://github.com/JBoulenger21/FlappyBird" target="_blank" class="btn btn-primary">Repository GitHub</a>
                 </div>
