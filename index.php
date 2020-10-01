@@ -43,7 +43,7 @@ include('header.php');
           <div class="item"><a href="https://github.com/JBoulenger21" target="_blank"><img class="logocontact" src="ressources/github.png" alt="github logo"></img></a></div>
       </div>
       <div>
-          <div class="item"><a href="ressources/CV_Julie_BOULENGER_DevWeb.pdf" download="CV Julie Boulenger" target="_blank">CV</a></div>
+          <div class="item"><a href="ressources/CV_JulieBoulenger_DevWeb.pdf" download="CV Julie Boulenger" target="_blank">CV</a></div>
       </div>
     </div>
     <div class="content p-0">
@@ -57,7 +57,7 @@ include('header.php');
           <h3 id="about">A propos</h3>
           <p></p>
           <h3 id="competences">Compétences</h3>
-          <div class="logoCompetences">
+          <div class="logoCompetences d-flex justify-content-between">
             <img src="ressources/logoHTML5.png" alt="logo HTML5">
             <img src="ressources/logoCSS3.png" alt="logo CSS3">
             <img src="ressources/logobootstrap.png" alt="logo bootstrap">
