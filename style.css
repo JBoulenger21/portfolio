@@ -4,7 +4,9 @@ scroll-behavior: smooth;
 body{
   margin : 20px;
 }
-
+.projetcentrer img{
+  max-height: 10rem;
+}
 .sidebar {
   height: 100vh;
   background-color: #37474F;

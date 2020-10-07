@@ -67,20 +67,7 @@ include('header.php');
           </div>
           <h3 id="projects">Projets</h3>
             <div class="row projetcentrer">
-              <div class="card col-lg-4 mb-4" style="width: 20rem;">
-                <div class="card-header d-flex justify-content-center">
-                  <img class="iconeComp" src="ressources/logoHTML5nb.png" onmouseover="this.src='ressources/logoHTML5'" onmouseout="this.src='ressources/logoHTML5nb.png'" alt="logo HTML5">
-                  <img class="iconeComp" src="ressources/logoCSS3nb.png" onmouseover="this.src='ressources/logoCSS3.png'" onmouseout="this.src='ressources/logoCSS3nb.png'" alt="logo CSS3">
-                  <img class="iconeComp" src="ressources/logobootstrapnb.png" onmouseover="this.src='ressources/logobootstrap.png'" onmouseout="this.src='ressources/logobootstrapnb.png'" alt="logo Bootstrap">
-                </div>
-                <img src="ressources/blueasy.PNG" class="card-img-top" alt="Intégration de la maquette blue easy">
-                <div class="card-body">
-                  <h5 class="card-title">Intégration BlueEasy</h5>
-                  <p class="card-text">Intégration à partir d'une maquette en utilisant HTML5 et CSS.</p>
-                  <a href="https://github.com/JBoulenger21/bleasy" target="_blank" class="btn btn-primary">Repository GitHub</a>
-                </div>
-              </div>
-              <div class="card col-lg-4 mb-4" style="width: 20rem;">
+              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
                 <div class="card-header d-flex justify-content-center">
                   <img class="iconeComp" src="ressources/logoPhpnb.png" onmouseover="this.src='ressources/logoPhp.png'" onmouseout="this.src='ressources/logoPhpnb.png'" alt="logo PHP">
                 </div>
@@ -91,7 +78,18 @@ include('header.php');
                   <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary">Repository GitHub</a>
                 </div>
               </div>
-              <div class="card col-lg-4 mb-4" style="width: 20rem;">
+              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
+                <div class="card-header d-flex justify-content-center">
+                  <img class="iconeComp" src="ressources/logoPhpnb.png" onmouseover="this.src='ressources/logoPhp.png'" onmouseout="this.src='ressources/logoPhpnb.png'" alt="logo PHP">
+                </div>
+                <img src="ressources/explofichiers.PNG" class="card-img-top" alt="Exporateur de fichier en PHP">
+                <div class="card-body">
+                  <h5 class="card-title">Projet Explorateur de Fichiers</h5>
+                  <p class="card-text">Développement d'un explorateur de fichiers style windows à l'aide de PHP.</p>
+                  <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary">Repository GitHub</a>
+                </div>
+              </div>
+              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
                 <div class="card-header d-flex justify-content-center">
                   Projet ACSCAPE
                 </div>
@@ -102,7 +100,7 @@ include('header.php');
                   <a href="https://github.com/ACSCAPE" target="_blank" class="btn btn-primary">Organisation GitHub</a>
                 </div>
               </div>
-              <div class="card col-lg-4 mb-4" style="width: 20rem;">
+              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
                 <div class="card-header d-flex justify-content-center">
                   <img class="iconeComp" src="ressources/js-logonb.png" onmouseover="this.src='ressources/js-logo.png'" onmouseout="this.src='ressources/js-logonb.png'" alt="logo PHP">
                 </div>
