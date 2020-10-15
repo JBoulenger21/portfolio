@@ -8,44 +8,6 @@ include('header.php');
 </header>
 <section class="container">
   <div class="row m-0">
-    <div class="sidebar sidebarleft">
-      <div>
-        <div class="item">
-            <a href="#">Accueil</a>
-        </div>
-      </div>
-      <div>
-        <div class="item">
-            <a href="#about">A<span>_</span>propos</a>
-        </div>
-      </div>
-      <div>
-        <div class="item">
-            <a href="#competences">Compétences</a>
-        </div>
-      </div>
-      <div>
-        <div class="item">
-            <a href="#projects">Projets</a>
-        </div>
-      </div>
-      <div>
-        <div class="item">
-            <a href="#contact">Contact</a>
-        </div>
-      </div>
-    </div>
-    <div class="sidebar sidebarright">
-      <div>
-          <div class="item"><a href="https://www.linkedin.com/in/julieboulenger21/" target="_blank"><img class="logocontact" src="ressources/linkedin.png" alt="linkedin logo"></img></a></div>
-      </div>
-      <div>
-          <div class="item"><a href="https://github.com/JBoulenger21" target="_blank"><img class="logocontact" src="ressources/github.png" alt="github logo"></img></a></div>
-      </div>
-      <div>
-          <div class="item"><a href="ressources/CV_JulieBoulenger_DevWeb.pdf" download="CV Julie Boulenger" target="_blank">CV</a></div>
-      </div>
-    </div>
     <div class="content p-0">
       <div class="container">
         <div class="col-lg-10 col-sm-8 mx-auto">
@@ -55,7 +17,11 @@ include('header.php');
             <img src="ressources/avatartest3bis.png" alt="Avatar Julie Boulenger moitié dessin moitié photo">
           </div>
           <h3 id="about">A propos</h3>
-          <p></p>
+            <p> <span class="quote">« Tout le monde est un génie. Mais si vous jugez un poisson   sur ses capacités à grimper à un arbre, il passera sa vie à croire qu’il est stupide. »</span> Albert Einstein<br><br>
+
+            Si je suis loin d'être la plus douée pour grimper à un arbre, je peux être fière de ma capacité d'analyse, d'écoute et de logique, atouts que je mets à profit dans ma carrière professionnelle.<br>
+
+            Ma reconversion dans le développement informatique est une réussite : j'y ai trouvé ma voie, ma volonté de faire mon chemin et mon goût de bien y travailler. Apprendre est un bonheur, et progresser me motive. Je le fais avec énergie et le sourire.<br></p>
           <h3 id="competences">Compétences</h3>
           <div class="logoCompetences d-flex justify-content-between">
             <img src="ressources/logoHTML5.png" alt="logo HTML5">
@@ -111,6 +77,7 @@ include('header.php');
                   <a href="https://github.com/JBoulenger21/FlappyBird" target="_blank" class="btn btn-primary">Repository GitHub</a>
                 </div>
               </div>
+              <a href="projet.php"><button type="button" name="button">Tous les projets en détail</button></a>
           </div>
         </div>
       </div>

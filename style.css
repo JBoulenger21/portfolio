@@ -25,8 +25,8 @@ body{
   position: fixed;
   display:flex;
   flex-direction: column;
-  justify-content:  center;
-  align-items: center;
+  /* justify-content: space-between; */
+  align-items: stretch;
 
   height: 100%;
   width: 80px;
@@ -37,7 +37,7 @@ body{
   position: fixed;
   display:flex;
   flex-direction: column;
-  justify-content:  center;
+  /* justify-content: space-between; */
   align-items: center;
 
   right: 0;
@@ -105,7 +105,13 @@ body{
   justify-content: space-evenly;
   align-items: center;
 }
-
+.quote{
+  font-size: 20px;
+  font-weight: bold;
+}
+.imgprojet{
+  width: 100%;
+}
 @media screen and (max-width: 640px) {
   .sidebar{
     width: 40px;
