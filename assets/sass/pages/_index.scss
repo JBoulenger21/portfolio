@@ -1,0 +1,62 @@
+.projetcentrer img{
+  max-height: 10rem;
+}
+.btnContact{
+  background-color: #37474F;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+}
+.logocontact{
+  width: 50px;
+  height: 50px;
+}
+.projetcentrer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.iconeComp{
+  width: 2rem;
+  height: 2rem;
+}
+.logoCompetences{
+  width: 80vh;
+  height: auto;
+}
+.logoCompetences img{
+  height:5rem;
+  width: 5rem;
+  display: inline-flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.quote{
+  font-size: 20px;
+  font-weight: bold;
+}
+.imgprojet{
+  width: 100%;
+}
+
+@media screen and (max-width: 640px) {
+  .sidebar{
+    width: 40px;
+  }
+  .sidebar a{
+    font-size: 18px;
+  }
+  .content{
+    margin: auto;
+    width: 40vh;
+  }
+  .logocontact{
+    width: 30px;
+    height: 30px;
+  }
+}

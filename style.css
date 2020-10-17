@@ -1,12 +1,11 @@
-html{
-scroll-behavior: smooth;
+html {
+  scroll-behavior: smooth;
 }
-body{
-  margin : 20px;
+
+body {
+  margin: 20px;
 }
-.projetcentrer img{
-  max-height: 10rem;
-}
+
 .sidebar {
   height: 100vh;
   background-color: #37474F;
@@ -17,114 +16,137 @@ body{
   height: 100%;
   width: 80px;
 }
-.item{
-  display: flex;
-  flex-wrap: nowrap;
-}
-.sidebarleft{
+
+.sidebarleft {
   position: fixed;
-  display:flex;
+  display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: stretch;
-
   height: 100%;
   width: 80px;
-  left:0;
-  top:0;
+  left: 0;
+  top: 0;
 }
-.sidebarright{
+
+.sidebarright {
   position: fixed;
-  display:flex;
+  display: flex;
   flex-direction: column;
   /* justify-content: space-between; */
   align-items: center;
-
   right: 0;
-  top:0;
+  top: 0;
 }
-.sidebar div{
-    flex:1;
+
+.sidebar div {
+  flex: 1;
 }
-.sidebar span{
-  opacity:0;
+
+.sidebar span {
+  opacity: 0;
 }
-.sidebarleft .item{
+
+.item {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.sidebarleft .item {
   transform: rotate(-90deg) translate(-50%, 0%);
   left: 0;
   /* padding: 40px; */
   color: white;
 }
 
-.sidebarright .item{
+.sidebarright .item {
   transform: rotate(90deg) translate(100%, 0%);
   /* top: 50%; */
   color: white;
   flex: 1;
   /* padding: 50px; */
 }
-.sidebar a{
+
+.sidebar a {
   text-decoration: none;
   color: white;
   font-weight: bold;
   font-size: 1.3rem;
   padding: 0;
 }
-.btnContact{
+
+.projetcentrer img {
+  max-height: 10rem;
+}
+
+.btnContact {
   background-color: #37474F;
   color: white;
-  display:flex;
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   text-align: center;
   margin: auto;
 }
-.logocontact{
+
+.logocontact {
   width: 50px;
   height: 50px;
 }
-.projetcentrer{
+
+.projetcentrer {
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: auto;
 }
-.iconeComp{
+
+.iconeComp {
   width: 2rem;
   height: 2rem;
 }
-.logoCompetences{
+
+.logoCompetences {
   width: 80vh;
   height: auto;
 }
-.logoCompetences img{
-  height:5rem;
+
+.logoCompetences img {
+  height: 5rem;
   width: 5rem;
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
 }
-.quote{
+
+.quote {
   font-size: 20px;
   font-weight: bold;
 }
-.imgprojet{
+
+.imgprojet {
   width: 100%;
 }
+
 @media screen and (max-width: 640px) {
-  .sidebar{
+  .sidebar {
     width: 40px;
   }
-  .sidebar a{
+
+  .sidebar a {
     font-size: 18px;
   }
-  .content{
+
+  .content {
     margin: auto;
     width: 40vh;
   }
-  .logocontact{
+
+  .logocontact {
     width: 30px;
     height: 30px;
   }
 }
+
+/*# sourceMappingURL=style.css.map */
