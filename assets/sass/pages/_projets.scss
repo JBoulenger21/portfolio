@@ -1,0 +1,16 @@
+.pageprojet{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  img{
+    max-width: 50%;
+  }
+}
+.titreProjet{
+  text-align: center;
+  padding:{
+    bottom: 3rem;
+  }
+}
