@@ -3,7 +3,7 @@ include('header.php');
 ?>
 <header>
   <div class="container">
-    <h1 class="text-center">Julie BOULENGER - Developpeuse web</h1>
+    <h1 class="text-center">Julie BOULENGER Developpeuse web</h1>
   </div>
 </header>
 <section class="container">
@@ -14,7 +14,7 @@ include('header.php');
           <h1 class="text-center">PORTFOLIO</h1>
           <h2>Venez découvrir mon univers !</h2>
           <div class="d-flex justify-content-center" >
-            <img src="ressources/avatartest3bis.png" alt="Avatar Julie Boulenger moitié dessin moitié photo">
+            <img src="ressources/Avatar3.png" alt="Avatar Julie Boulenger moitié dessin moitié photo">
           </div>
           <h3 id="about">A propos</h3>
             <p> <span class="quote">« Tout le monde est un génie. Mais si vous jugez un poisson   sur ses capacités à grimper à un arbre, il passera sa vie à croire qu’il est stupide. »</span> Albert Einstein<br><br>
@@ -23,7 +23,7 @@ include('header.php');
 
             Ma reconversion dans le développement informatique est une réussite : j'y ai trouvé ma voie, ma volonté de faire mon chemin et mon goût de bien y travailler. Apprendre est un bonheur, et progresser me motive. Je le fais avec énergie et le sourire.<br></p>
           <h3 id="competences">Compétences</h3>
-          <div class="logoCompetences d-flex justify-content-between">
+          <div class="logoCompetences">
             <img src="ressources/logoHTML5.png" alt="logo HTML5">
             <img src="ressources/logoCSS3.png" alt="logo CSS3">
             <img src="ressources/logobootstrap.png" alt="logo bootstrap">
@@ -41,7 +41,7 @@ include('header.php');
                 <div class="card-body">
                   <h5 class="card-title">Projet Explorateur de Fichiers</h5>
                   <p class="card-text">Développement d'un explorateur de fichiers style windows à l'aide de PHP.</p>
-                  <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary">Repository GitHub</a>
+                  <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary btncardprojet">Repository GitHub</a>
                 </div>
               </div>
               <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
@@ -52,7 +52,7 @@ include('header.php');
                 <div class="card-body">
                   <h5 class="card-title">Projet Explorateur de Fichiers</h5>
                   <p class="card-text">Développement d'un explorateur de fichiers style windows à l'aide de PHP.</p>
-                  <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary">Repository GitHub</a>
+                  <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary btncardprojet">Repository GitHub</a>
                 </div>
               </div>
               <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
@@ -63,7 +63,7 @@ include('header.php');
                 <div class="card-body">
                   <h5 class="card-title">Projet ACSCAPE</h5>
                   <p class="card-text">Developpement d'un EscapeGame Managment System (EGMS) en mode projet.</p>
-                  <a href="https://github.com/ACSCAPE" target="_blank" class="btn btn-primary">Organisation GitHub</a>
+                  <a href="https://github.com/ACSCAPE" target="_blank" class="btn btn-primary btncardprojet">Organisation GitHub</a>
                 </div>
               </div>
               <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
@@ -74,16 +74,16 @@ include('header.php');
                 <div class="card-body">
                   <h5 class="card-title">Flappy Bird</h5>
                   <p class="card-text">Developpement d'un Flappy Bird en full Js.</p>
-                  <a href="https://github.com/JBoulenger21/FlappyBird" target="_blank" class="btn btn-primary">Repository GitHub</a>
+                  <a href="https://github.com/JBoulenger21/FlappyBird" target="_blank" class="btn btn-primary btncardprojet">Repository GitHub</a>
                 </div>
               </div>
-              <a href="projet.php"><button type="button" name="button">Tous les projets en détail</button></a>
+              <a href="projet.php"><button type="button" name="button" class="btnprojet">Tous les projets en détail</button></a>
           </div>
         </div>
       </div>
     </div>
   </div>
-  <div class="container mt-3">
+  <div class="container mt-3 contactform">
     <h2 id="contact">Contact</h2>
 
     <form action="index.php" method="post">

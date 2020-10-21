@@ -2,17 +2,49 @@ html {
   scroll-behavior: smooth;
 }
 
-body {
-  margin: 20px;
+h1, h2, h3, h4 {
+  font-family: "Poppins";
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
 }
 
+body {
+  margin: 20px;
+  font-family: "Mulish";
+}
+
+a {
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "Mulish", sans-serif;
+  src: url("../fonts/Mulish-Bold.ttf");
+  src: url("../fonts/Mulish-BoldItalic.ttf");
+  src: url("../fonts/Mulish-Italic.ttf");
+  src: url("../fonts/Mulish-LightItalic.ttf");
+  src: url("../fonts/Mulish-Light.ttf");
+  src: url("../fonts/Mulish-Medium.ttf");
+  src: url("../fonts/Mulish-MediumItalic.ttf");
+  src: url("../fonts/Mulish-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins", sans-serif;
+  src: url("../fonts/Poppins-Bold.ttf");
+  src: url("../fonts/Poppins-BoldItalic.ttf");
+  src: url("../fonts/Poppins-Italic.ttf");
+  src: url("../fonts/Poppins-LightItalic.ttf");
+  src: url("../fonts/Poppins-Light.ttf");
+  src: url("../fonts/Poppins-Medium.ttf");
+  src: url("../fonts/Poppins-MediumItalic.ttf");
+  src: url("../fonts/Poppins-Regular.ttf");
+  src: url("../fonts/Poppins-Thin.ttf");
+  src: url("../fonts/Poppins-ThinItalic.ttf");
+}
 .sidebar {
   height: 100vh;
-  background-color: #37474F;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+  background-color: #516b79;
   height: 100%;
   width: 80px;
 }
@@ -21,7 +53,6 @@ body {
   position: fixed;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: stretch;
   height: 100%;
   width: 80px;
@@ -33,7 +64,6 @@ body {
   position: fixed;
   display: flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
   right: 0;
   top: 0;
@@ -55,16 +85,13 @@ body {
 .sidebarleft .item {
   transform: rotate(-90deg) translate(-50%, 0%);
   left: 0;
-  /* padding: 40px; */
   color: white;
 }
 
 .sidebarright .item {
   transform: rotate(90deg) translate(100%, 0%);
-  /* top: 50%; */
   color: white;
   flex: 1;
-  /* padding: 50px; */
 }
 
 .sidebar a {
@@ -80,7 +107,7 @@ body {
 }
 
 .btnContact {
-  background-color: #37474F;
+  background-color: #8dabbe;
   color: white;
   display: flex;
   justify-content: center;
@@ -108,16 +135,21 @@ body {
 }
 
 .logoCompetences {
-  width: 80vh;
   height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
-
 .logoCompetences img {
   height: 5rem;
   width: 5rem;
   display: inline-flex;
   justify-content: space-evenly;
   align-items: center;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+  margin-bottom: 1rem;
 }
 
 .quote {
@@ -127,6 +159,31 @@ body {
 
 .imgprojet {
   width: 100%;
+}
+
+.btncardprojet {
+  background-color: #8dabbe;
+  color: white;
+  border: none;
+}
+
+.btnprojet {
+  background-color: #8dabbe;
+  font-family: "Poppins";
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: auto;
+  margin-bottom: 2rem;
+  padding: 0.5rem;
+  border-radius: 10px;
+  border: none;
+}
+
+.contactform {
+  width: 60%;
 }
 
 @media screen and (max-width: 640px) {
@@ -146,6 +203,10 @@ body {
   .logocontact {
     width: 30px;
     height: 30px;
+  }
+
+  .contactform {
+    width: 80%;
   }
 }
 .pageprojet {

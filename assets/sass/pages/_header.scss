@@ -1,10 +1,7 @@
+@import "../utils/variables";
 .sidebar {
   height: 100vh;
-  background-color: #37474F;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
+  background-color: $BackgroundMedium;
   height: 100%;
   width: 80px;
 }
@@ -12,7 +9,6 @@
   position: fixed;
   display:flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: stretch;
 
   height: 100%;
@@ -24,7 +20,6 @@
   position: fixed;
   display:flex;
   flex-direction: column;
-  /* justify-content: space-between; */
   align-items: center;
 
   right: 0;
@@ -43,15 +38,12 @@
 .sidebarleft .item{
   transform: rotate(-90deg) translate(-50%, 0%);
   left: 0;
-  /* padding: 40px; */
   color: white;
 }
 .sidebarright .item{
   transform: rotate(90deg) translate(100%, 0%);
-  /* top: 50%; */
   color: white;
   flex: 1;
-  /* padding: 50px; */
 }
 .sidebar a{
   text-decoration: none;
