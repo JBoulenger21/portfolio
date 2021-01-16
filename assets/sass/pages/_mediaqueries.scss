@@ -1,0 +1,27 @@
+@media screen and (max-width: 640px) {
+  .sidebar{
+    width: 40px;
+  }
+  .sidebar a{
+    font-size: 18px;
+  }
+  .content{
+    margin: auto;
+    width: 40vh;
+  }
+  .logocontact{
+    width: 30px;
+    height: 30px;
+  }
+  .contactform{
+    width: 80%;
+  }
+  .imgprojet{
+    width: 70%;
+    height: auto;
+  }
+  .txtprojet{
+    width: 70%;
+    margin: auto;
+  }
+}

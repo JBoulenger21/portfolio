@@ -2,8 +2,10 @@
 @import "./base/_typo";
 
 @import "./pages/_header";
-@import "./pages/_index.scss";
-@import "./pages/_projets.scss";
+@import "./pages/_index";
+@import "./pages/_projets";
 @import "./pages/_footer";
+@import "./pages/_mediaqueries";
+
 
 @import "./utils/_variables.scss";

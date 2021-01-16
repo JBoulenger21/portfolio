@@ -1,31 +1,19 @@
 @import "../utils/variables";
-.projetcentrer img{
-  max-height: 10rem;
+
+//Introduction
+
+.quote{
+  font-size: 20px;
+  font-weight: bold;
 }
-.btnContact{
-  background-color: $BackgroundLight;
-  color: white;
-  display:flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: row;
-  text-align: center;
-  margin: auto;
-}
-.logocontact{
-  width: 50px;
-  height: 50px;
-}
-.projetcentrer{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: auto;
-}
+
+//Competence
+
 .iconeComp{
   width: 2rem;
   height: 2rem;
 }
+
 .logoCompetences{
   height: auto;
   display: flex;
@@ -39,16 +27,60 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
+    cursor: pointer;
     margin:{
       top: 2rem;
       bottom: 1rem;
     }
   }
 }
-.quote{
-  font-size: 20px;
-  font-weight: bold;
+.textcomp{
+  text-align: center;
 }
+#btncompetence{
+  display: none;
+  justify-content: center;
+  margin: auto;
+  background-color: $BackgroundLight;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  padding: 0.5rem;
+  &:hover{
+    background-color: $BackgroundDark;
+  }
+}
+#competencehtml{
+  display: none;
+}
+#competencecss{
+  display: none;
+}
+#competencebootstrap{
+  display: none;
+}
+#competencephp{
+  display: none;
+}
+#competencewp{
+  display: none;
+}
+#competencejs{
+  display: none;
+}
+
+//projet
+
+.projetcentrer{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+}
+.projetcentrer img{
+  max-height: 10rem;
+}
+
 .imgprojet{
   width: 100%;
 }
@@ -56,6 +88,9 @@
   background-color: $BackgroundLight;
   color: white;
   border: none;
+  &:hover{
+    background-color: $BackgroundDark;
+  }
 }
 .btnprojet{
   background-color: $BackgroundLight;
@@ -70,28 +105,31 @@
   padding:0.5rem;
   border-radius: 10px;
   border: none;
+  &:hover{
+    background-color: $BackgroundDark;
+  }
 }
+
+//contact
+.btnContact{
+  background-color: $BackgroundLight;
+  color: white;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  margin: auto;
+  &:hover{
+    background-color: $BackgroundDark;
+    color: white;
+  }
+}
+.logocontact{
+  width: 50px;
+  height: 50px;
+}
+
 .contactform{
   width: 60%;
-}
-
-
-@media screen and (max-width: 640px) {
-  .sidebar{
-    width: 40px;
-  }
-  .sidebar a{
-    font-size: 18px;
-  }
-  .content{
-    margin: auto;
-    width: 40vh;
-  }
-  .logocontact{
-    width: 30px;
-    height: 30px;
-  }
-  .contactform{
-    width: 80%;
-  }
 }

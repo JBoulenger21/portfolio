@@ -3,7 +3,7 @@ include('header.php');
 ?>
 <header>
   <div class="container">
-    <h1 class="text-center">Julie BOULENGER Developpeuse web</h1>
+    <h1 class="text-center">Julie BOULENGER Développeuse web</h1>
   </div>
 </header>
 <section class="container">
@@ -13,9 +13,9 @@ include('header.php');
         <div class="col-lg-10 col-sm-8 mx-auto">
           <h1 class="text-center">PORTFOLIO</h1>
           <h2>Venez découvrir mon univers !</h2>
-          <div class="d-flex justify-content-center" >
-            <img src="ressources/Avatar3.png" alt="Avatar Julie Boulenger moitié dessin moitié photo">
-          </div>
+            <div class="d-flex justify-content-center" >
+              <img src="ressources/Avatar3.png" alt="Avatar Julie Boulenger moitié dessin moitié photo">
+            </div>
           <h3 id="about">A propos</h3>
             <p> <span class="quote">« Tout le monde est un génie. Mais si vous jugez un poisson   sur ses capacités à grimper à un arbre, il passera sa vie à croire qu’il est stupide. »</span> Albert Einstein<br><br>
 
@@ -23,17 +23,48 @@ include('header.php');
 
             Ma reconversion dans le développement informatique est une réussite : j'y ai trouvé ma voie, ma volonté de faire mon chemin et mon goût de bien y travailler. Apprendre est un bonheur, et progresser me motive. Je le fais avec énergie et le sourire.<br></p>
           <h3 id="competences">Compétences</h3>
+            <p class="textcomp">Cliquez sur une compétence</p>
           <div class="logoCompetences">
-            <img src="ressources/logoHTML5.png" alt="logo HTML5">
-            <img src="ressources/logoCSS3.png" alt="logo CSS3">
-            <img src="ressources/logobootstrap.png" alt="logo bootstrap">
-            <img src="ressources/logoPhp.png" alt="logo Php">
-            <img src="ressources/logoWordpress.png" alt="logo Wordpress">
-            <img src="ressources/js-logo.png" alt="logo Js">
+            <img id="logohtml" src="ressources/logoHTML5.png" alt="logo HTML5">
+            <img id="logocss" src="ressources/logoCSS3.png" alt="logo CSS3">
+            <img id="logobootstrap" src="ressources/logobootstrap.png" alt="logo bootstrap">
+            <img id="logophp" src="ressources/logoPhp.png" alt="logo Php">
+            <img id="logowp" src="ressources/logoWordpress.png" alt="logo Wordpress">
+            <img id="logojs" src="ressources/js-logo.png" alt="logo Js">
           </div>
+                <br>
+            <div class="btncompetence">
+              <button id="btncompetence" type="button" name="button">Masquer</button>
+            </div>
+            <div class="competencehtml" id="competencehtml">
+              <h3>Mes compétences en HTML5</h3>
+                <p>Après plusieurs intégrations à partir de maquette, j'ai pu perfectionner mes connaissances en HTML, langage de base pour le développement informatique.</p>
+
+            </div>
+            <div class="competencecss" id="competencecss">
+              <h3>Mes compétences en CSS</h3>
+                <p>Adepte de SASS, j'ai appris à gérer le CSS de manière plus automatique et avec des variables pour la maintenabilité du site. Flexbox et Zindex me résistent encore, mais plus pour longtemps !</p>
+            </div>
+            <div class="competencebootstrap" id="competencebootstrap">
+              <h3>Mes compétences en Bootstrap</h3>
+                <p>Facilitateur de construction de page, Bootstrap est très utile avec sa grille sur 12 et toutes ses fonctionnalités. Parfois, il est plus rapide sur certains sites vitrines d'utiliser du full Bootstrap plutôt que de passer trop de temps en CSS !</p>
+            </div>
+            <div class="competencephp" id="competencephp">
+              <h3>Mes compétences en PHP</h3>
+                <p>Premier langage de programmation que j'ai appris, c'est à travers le projet d'explorateur de fichiers que j'ai découvert le PHP. A l'aise pour continuer de me perfectionner, c'est sur ce langage que je me suis initiée à la POO.</p>
+            </div>
+            <div class="competencewp" id="competencewp">
+              <h3>Mes compétences en WordPress</h3>
+                <p>Forte de deux projets WordPress, un thème pour apprendre et un projet réel de groupe, j'ai appris à me débrouiller avec WordPress et suis ouverte à en apprendre d'avantage sur ce CMS si populaire sur le Web.</p>
+            </div>
+            <div class="competencejs" id="competencejs">
+              <h3>Mes compétences en JavaScript</h3>
+                <p>Langage coup de coeur, j'aime tous les possibles que Javascript offre ! Autant en front qu'en back avec NodeJs, j'aimerais à terme me perfectionner et j'hésite encore entre Js et Python sur ma spécialité.</p>
+            </div>
+
           <h3 id="projects">Projets</h3>
             <div class="row projetcentrer">
-              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
+              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 27rem;">
                 <div class="card-header d-flex justify-content-center">
                   <img class="iconeComp" src="ressources/logoPhpnb.png" onmouseover="this.src='ressources/logoPhp.png'" onmouseout="this.src='ressources/logoPhpnb.png'" alt="logo PHP">
                 </div>
@@ -41,10 +72,13 @@ include('header.php');
                 <div class="card-body">
                   <h5 class="card-title">Projet Explorateur de Fichiers</h5>
                   <p class="card-text">Développement d'un explorateur de fichiers style windows à l'aide de PHP.</p>
-                  <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary btncardprojet">Repository GitHub</a>
+                  <div class="d-flex">
+                    <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary btncardprojet m-1">Repository GitHub</a>
+                    <a href="projet.php#explofichiers" class="btn btn-primary btncardprojet m-1">En voir plus</a>
+                  </div>
                 </div>
               </div>
-              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
+              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 27rem;">
                 <div class="card-header d-flex justify-content-center">
                   <img class="iconeComp" src="ressources/logoPhpnb.png" onmouseover="this.src='ressources/logoPhp.png'" onmouseout="this.src='ressources/logoPhpnb.png'" alt="logo PHP">
                 </div>
@@ -52,10 +86,13 @@ include('header.php');
                 <div class="card-body">
                   <h5 class="card-title">Projet Explorateur de Fichiers</h5>
                   <p class="card-text">Développement d'un explorateur de fichiers style windows à l'aide de PHP.</p>
-                  <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary btncardprojet">Repository GitHub</a>
+                  <div class="d-flex">
+                    <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary btncardprojet m-1">Repository GitHub</a>
+                    <a href="projet.php#explofichiers" class="btn btn-primary btncardprojet m-1">En voir plus</a>
+                  </div>
                 </div>
               </div>
-              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
+              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 27rem;">
                 <div class="card-header d-flex justify-content-center">
                   Projet ACSCAPE
                 </div>
@@ -63,10 +100,13 @@ include('header.php');
                 <div class="card-body">
                   <h5 class="card-title">Projet ACSCAPE</h5>
                   <p class="card-text">Developpement d'un EscapeGame Managment System (EGMS) en mode projet.</p>
-                  <a href="https://github.com/ACSCAPE" target="_blank" class="btn btn-primary btncardprojet">Organisation GitHub</a>
+                  <div class="d-flex">
+                    <a href="https://github.com/ACSCAPE" target="_blank" class="btn btn-primary btncardprojet">Organisation GitHub</a>
+                    <a href="projet.php#explofichiers" class="btn btn-primary btncardprojet m-1">En voir plus</a>
+                  </div>
                 </div>
               </div>
-              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 25rem;">
+              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 27rem;">
                 <div class="card-header d-flex justify-content-center">
                   <img class="iconeComp" src="ressources/js-logonb.png" onmouseover="this.src='ressources/js-logo.png'" onmouseout="this.src='ressources/js-logonb.png'" alt="logo PHP">
                 </div>
@@ -74,7 +114,10 @@ include('header.php');
                 <div class="card-body">
                   <h5 class="card-title">Flappy Bird</h5>
                   <p class="card-text">Developpement d'un Flappy Bird en full Js.</p>
-                  <a href="https://github.com/JBoulenger21/FlappyBird" target="_blank" class="btn btn-primary btncardprojet">Repository GitHub</a>
+                  <div class="d-flex">
+                    <a href="https://github.com/JBoulenger21/FlappyBird" target="_blank" class="btn btn-primary btncardprojet">Repository GitHub</a>
+                    <a href="projet.php#explofichiers" class="btn btn-primary btncardprojet m-1">En voir plus</a>
+                  </div>
                 </div>
               </div>
               <a href="projet.php"><button type="button" name="button" class="btnprojet">Tous les projets en détail</button></a>
@@ -116,7 +159,7 @@ if(isset($_POST['nomContact']) && isset($_POST['emailContact']) && isset($_POST[
     $mail = $_POST['emailContact'];
     $msg = $_POST['textContact'];
     $subject = $_POST['sujetContact'];
-    $dest = "j.boulenger@codeur.online";
+    $dest = "boulenger.julie@gmail.com";
     $sujet = check($subject);
     $corp = check($msg);
 

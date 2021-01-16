@@ -15,3 +15,30 @@
     bottom: 3rem;
   }
 }
+.imgprojet{
+  margin: auto;
+  padding: 2rem;
+}
+.navbar{
+  display: flex;
+  width: 80%;
+  margin: auto;
+}
+.navbarprojets{
+  background-color: white;
+  ul{
+    li{
+      list-style-type: none;
+      .nav-link{
+        color: $BackgroundDark;
+        font-size: 1.5rem;
+        &:hover{
+          background-color: $BackgroundDark;
+          color : white;
+          font-size: 2rem;
+        }
+      }
+
+    }
+  }
+}
