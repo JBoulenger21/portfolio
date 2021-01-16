@@ -1,4 +1,7 @@
 @media screen and (max-width: 640px) {
+  .avatar{
+    display: none;
+  }
   .sidebar{
     width: 40px;
   }
@@ -16,9 +19,10 @@
   .contactform{
     width: 80%;
   }
-  .imgprojet{
-    width: 70%;
-    height: auto;
+  .pageprojet{
+    img{
+      max-width: 100%;
+    }
   }
   .txtprojet{
     width: 70%;

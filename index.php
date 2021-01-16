@@ -11,10 +11,13 @@ include('header.php');
     <div class="content p-0">
       <div class="container">
         <div class="col-lg-10 col-sm-8 mx-auto">
+          <div class="d-flex">
+            <img class="m-auto" src="ressources/logo2JB.png" alt="Logo représentant un J et un B ensemble">
+          </div>
           <h1 class="text-center">PORTFOLIO</h1>
           <h2>Venez découvrir mon univers !</h2>
             <div class="d-flex justify-content-center" >
-              <img src="ressources/Avatar3.png" alt="Avatar Julie Boulenger moitié dessin moitié photo">
+              <img class="avatar" src="ressources/Avatar3.png" alt="Avatar Julie Boulenger moitié dessin moitié photo">
             </div>
           <h3 id="about">A propos</h3>
             <p> <span class="quote">« Tout le monde est un génie. Mais si vous jugez un poisson   sur ses capacités à grimper à un arbre, il passera sa vie à croire qu’il est stupide. »</span> Albert Einstein<br><br>
@@ -80,15 +83,32 @@ include('header.php');
               </div>
               <div class="card col-lg-4 mb-4" style="width: 20rem; height: 27rem;">
                 <div class="card-header d-flex justify-content-center">
-                  <img class="iconeComp" src="ressources/logoPhpnb.png" onmouseover="this.src='ressources/logoPhp.png'" onmouseout="this.src='ressources/logoPhpnb.png'" alt="logo PHP">
+                  <img class="iconeComp" src="ressources/js-logonb.png" onmouseover="this.src='ressources/js-logo.png'" onmouseout="this.src='ressources/js-logonb.png'" alt="logo PHP">
                 </div>
-                <img src="ressources/explofichiers.PNG" class="card-img-top" alt="Exporateur de fichier en PHP">
+                <img src="ressources/flappybird.PNG" class="card-img-top" alt="logo ACSCAPE">
                 <div class="card-body">
-                  <h5 class="card-title">Projet Explorateur de Fichiers</h5>
-                  <p class="card-text">Développement d'un explorateur de fichiers style windows à l'aide de PHP.</p>
+                  <h5 class="card-title">Flappy Bird</h5>
+                  <p class="card-text">Developpement d'un Flappy Bird en full Js.</p>
+                  <div class="d-flex">
+                    <a href="https://github.com/JBoulenger21/FlappyBird" target="_blank" class="btn btn-primary btncardprojet">Repository GitHub</a>
+                    <a href="projet.php#flappybird" class="btn btn-primary btncardprojet m-1">En voir plus</a>
+                  </div>
+                </div>
+              </div>
+              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 27rem;">
+                <div class="card-header d-flex justify-content-center">
+                  <img class="iconeComp" src="ressources/logoHTML5nb.png" onmouseover="this.src='ressources/logoHTML5.png'" onmouseout="this.src='ressources/logoHTML5nb.png'" alt="logo HTML5">
+                  <img class="iconeComp" src="ressources/logoCSS3nb.png" onmouseover="this.src='ressources/logoCSS3.png'" onmouseout="this.src='ressources/logoCSS3nb.png'" alt="logo CSS3">
+                  <img class="iconeComp" src="ressources/logoWordpressnb.png" onmouseover="this.src='ressources/logoWordpress.png'" onmouseout="this.src='ressources/logoWordpressnb.png'" alt="logo WordPress">
+                  <img class="iconeComp" src="ressources/logoWordpressnb.png" onmouseover="this.src='ressources/logoWordpress.png'" onmouseout="this.src='ressources/logoWordpressnb.png'" alt="logo WordPress">
+                </div>
+                <img src="ressources/laumaju.png" class="card-img-top" alt="Aperçu projet WordPress">
+                <div class="card-body">
+                  <h5 class="card-title">Projet WordPress</h5>
+                  <p class="card-text">Développement d'un site WordPress sur les inégalités des genres.</p>
                   <div class="d-flex">
                     <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary btncardprojet m-1">Repository GitHub</a>
-                    <a href="projet.php#explofichiers" class="btn btn-primary btncardprojet m-1">En voir plus</a>
+                    <a href="projet.php#laumaju" class="btn btn-primary btncardprojet m-1">En voir plus</a>
                   </div>
                 </div>
               </div>
@@ -99,23 +119,9 @@ include('header.php');
                 <img src="ressources/logo-bleu.png" class="card-img-top" alt="logo ACSCAPE">
                 <div class="card-body">
                   <h5 class="card-title">Projet ACSCAPE</h5>
-                  <p class="card-text">Developpement d'un EscapeGame Managment System (EGMS) en mode projet.</p>
+                  <p class="card-text">Début du développement d'un EscapeGame Managment System (EGMS) en mode projet.</p>
                   <div class="d-flex">
                     <a href="https://github.com/ACSCAPE" target="_blank" class="btn btn-primary btncardprojet">Organisation GitHub</a>
-                    <a href="projet.php#explofichiers" class="btn btn-primary btncardprojet m-1">En voir plus</a>
-                  </div>
-                </div>
-              </div>
-              <div class="card col-lg-4 mb-4" style="width: 20rem; height: 27rem;">
-                <div class="card-header d-flex justify-content-center">
-                  <img class="iconeComp" src="ressources/js-logonb.png" onmouseover="this.src='ressources/js-logo.png'" onmouseout="this.src='ressources/js-logonb.png'" alt="logo PHP">
-                </div>
-                <img src="ressources/flappybird.PNG" class="card-img-top" alt="logo ACSCAPE">
-                <div class="card-body">
-                  <h5 class="card-title">Flappy Bird</h5>
-                  <p class="card-text">Developpement d'un Flappy Bird en full Js.</p>
-                  <div class="d-flex">
-                    <a href="https://github.com/JBoulenger21/FlappyBird" target="_blank" class="btn btn-primary btncardprojet">Repository GitHub</a>
                     <a href="projet.php#explofichiers" class="btn btn-primary btncardprojet m-1">En voir plus</a>
                   </div>
                 </div>

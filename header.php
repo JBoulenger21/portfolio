@@ -19,17 +19,17 @@
       </div>
       <div>
         <div class="item">
-            <a href="#about">A<span>_</span>propos</a>
+            <a href="index.php#about">A<span>_</span>propos</a>
         </div>
       </div>
       <div>
         <div class="item">
-            <a href="#competences">Compétences</a>
+            <a href="index.php#competences">Compétences</a>
         </div>
       </div>
       <div>
         <div class="item">
-            <a href="#projects">Projets</a>
+            <a href="index.php#projects">Projets</a>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@
       </div>
       <div>
         <div class="item">
-            <a href="#contact">Contact</a>
+            <a href="index.php#contact">Contact</a>
         </div>
       </div>
     </div>
