@@ -31,11 +31,14 @@ include('header.php');
   <h4>Choix et réalisation</h4>
   <p class="txtprojet">Après avoir voulu créer un thème enfant, nous avons finalement opté pour la réalisation de notre propre thème, Laumaju. Après avoir décidé ensemble de la charte graphique de notre futur site, nous avons réalisé une animation, le logo, une illustration et une infographie. Après avoir fait les Wireframe et maquette du site, nous sommes passés à l'intégration. Une fois le projet finalisé, nous l'avons hébergé sur les serveurs de notre organisme de formation, Onlineformapro.</p>
 </div>
-<div class="container pageprojet">
-  <h2>Projet "Explorateur de fichiers"</h2>
-  <h3>Projet réalisé en groupe - Avec Laurine Herard.</h3>
-  <img class="imgprojet" src="ressources/explofichiers.PNG" alt="Aperçu explorateur de fichiers">
-    <p class="txtprojet">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.<p>
+<div id="acscape" class="container pageprojet">
+  <h2>Projet "ACSCAPE"</h2>
+  <h3>Projet réalisé avec toute la promotion de l'AccessCodeSchool.</h3>
+  <img class="imgprojet" src="ressources/logo-bleu.png" alt="Logo ACSCAPE">
+  <h4>Contexte</h4>
+  <p class="txtprojet">Projet lancé en formation pour réfléchir et commencer à réaliser un EscapeGame Managment System (EGMS).<p>
+  <h4>Choix et réalisation</h4>
+  <p class="txtprojet">La formation s'est séparée en 4 groupes pour travailler chacun sur des parties précises du projet. J'avais en charge de superviser ça en tant que chef de projet. J'ai pu réaliser un Cahier des Charges et un diagramme de Gantt en concertation avec tous les groupes.</p>
 </div>
 
 <?php

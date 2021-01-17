@@ -107,6 +107,10 @@ a {
   font-weight: bold;
 }
 
+.logoJB {
+  height: 8rem;
+}
+
 .iconeComp {
   width: 2rem;
   height: 2rem;
@@ -239,6 +243,11 @@ a {
   width: 60%;
 }
 
+.contact p {
+  margin: auto;
+  margin-top: 2em;
+}
+
 .pageprojet {
   width: 100%;
   display: flex;
@@ -272,7 +281,63 @@ a {
   font-size: 1.3em;
 }
 
+#footernav {
+  display: flex;
+}
+#footernav nav {
+  margin: auto;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-around;
+}
+#footernav .burger {
+  display: none;
+}
+
+.separator {
+  color: #37474F;
+  height: 3px;
+  width: 80%;
+  margin: auto;
+  padding: 2px;
+  margin-top: 3em;
+  margin-bottom: 3em;
+}
+
+.btnfooter {
+  background-color: #8dabbe;
+  font-family: "Poppins";
+  color: white;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+.btnfooter:hover {
+  background-color: #37474F;
+  color: white;
+}
+
+.txtmentions {
+  width: 80%;
+  margin: auto;
+}
+.txtmentions h1 {
+  text-align: center;
+  font-size: 3em;
+}
+.txtmentions b {
+  font-size: 2em;
+  color: #37474F;
+}
+.txtmentions p {
+  padding-top: 1.5em;
+}
+
 @media screen and (max-width: 640px) {
+  .logoJB {
+    height: 15rem;
+  }
+
   .avatar {
     display: none;
   }
@@ -306,6 +371,31 @@ a {
   .txtprojet {
     width: 70%;
     margin: auto;
+  }
+
+  #footernav img {
+    width: 5em;
+    margin: auto;
+    text-align: center;
+  }
+  #footernav .burger {
+    display: flex;
+  }
+
+  .footmenu a {
+    display: none;
+  }
+
+  .responsive a {
+    display: flex;
+  }
+  .responsive a:not(:first-child) {
+    width: auto;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
   }
 }
 

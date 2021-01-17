@@ -3,16 +3,16 @@ include('header.php');
 ?>
 <header>
   <div class="container">
-    <h1 class="text-center">Julie BOULENGER Développeuse web</h1>
+    <h1 class="text-center">Julie BOULENGER <br> Développeuse web</h1>
   </div>
 </header>
-<section class="container">
+<main class="container">
   <div class="row m-0">
     <div class="content p-0">
       <div class="container">
         <div class="col-lg-10 col-sm-8 mx-auto">
           <div class="d-flex">
-            <img class="m-auto" src="ressources/logo2JB.png" alt="Logo représentant un J et un B ensemble">
+            <img class="m-auto logoJB" src="ressources/logo2JB.png" alt="Logo représentant un J et un B ensemble">
           </div>
           <h1 class="text-center">PORTFOLIO</h1>
           <h2>Venez découvrir mon univers !</h2>
@@ -122,7 +122,7 @@ include('header.php');
                   <p class="card-text">Début du développement d'un EscapeGame Managment System (EGMS) en mode projet.</p>
                   <div class="d-flex">
                     <a href="https://github.com/ACSCAPE" target="_blank" class="btn btn-primary btncardprojet">Organisation GitHub</a>
-                    <a href="projet.php#explofichiers" class="btn btn-primary btncardprojet m-1">En voir plus</a>
+                    <a href="projet.php#acscape" class="btn btn-primary btncardprojet m-1">En voir plus</a>
                   </div>
                 </div>
               </div>
@@ -155,8 +155,8 @@ include('header.php');
       <button type="submit" class="btn btnContact">Me contacter</button>
     </form>
   </div>
-</section>
-
+</main>
+<div class="d-flex contact">
 <?php
 if(isset($_POST['nomContact']) && isset($_POST['emailContact']) && isset($_POST['sujetContact']) && isset($_POST['textContact'])){
   if (!empty($_POST['nomContact']) && !empty($_POST['emailContact']) && !empty($_POST['sujetContact']) && !empty($_POST['textContact'])){
@@ -174,12 +174,12 @@ if(isset($_POST['nomContact']) && isset($_POST['emailContact']) && isset($_POST[
     $mailheaders .= "Content-type: text/html; charset= utf-8\n";
 
        if (mail($dest, $sujet, 'Nom : '.$nom.'<br>'.$corp, $mailheaders))  {
-        echo "Email envoyé avec succès";
+        echo "<p>Email envoyé avec succès</p>";
         } else {
-        echo "Échec de l'envoi de l'email...";
+        echo "<p>Échec de l'envoi de l'email...</p>";
         }
         }else{
-          echo 'Veuillez renseigner tous les champs.';
+          echo "<p>Veuillez renseigner tous les champs.</p>";
         }
 }
 
@@ -190,7 +190,8 @@ function check($input){
   return $input;
 }
  ?>
-</section>
+  </div>
+
 
 <?php
 include('footer.php');

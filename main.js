@@ -47,3 +47,13 @@ if (btncompetence) {
     btncompetence.style.display = "block";
   });
 }
+
+function burgerMenu() {
+  console.log("Pouet");
+  var x = document.getElementById("footernav");
+  if (x.className === "footmenu") {
+    x.className = "responsive";
+  } else {
+    x.className = "footmenu";
+  }
+}

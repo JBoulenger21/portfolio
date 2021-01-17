@@ -1,4 +1,8 @@
 @media screen and (max-width: 640px) {
+
+  .logoJB{
+    height: 15rem;
+  }
   .avatar{
     display: none;
   }
@@ -27,5 +31,33 @@
   .txtprojet{
     width: 70%;
     margin: auto;
+  }
+  #footernav{
+    img{
+      width: 5em;
+      margin: auto;
+      text-align: center;
+    }
+    .burger{
+      display: flex;
+    }
+  }
+  .footmenu{
+    a{
+      display: none;
+    }
+  }
+  .responsive{
+    a{
+      display: flex;
+    }
+    a:not(:first-child){
+      width: auto;
+      margin: auto;
+      display: flex;
+      justify-content: center;
+      text-align: center;
+      align-items: center;
+    }
   }
 }
