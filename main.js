@@ -49,7 +49,6 @@ if (btncompetence) {
 }
 
 function burgerMenu() {
-  console.log("Pouet");
   var x = document.getElementById("footernav");
   if (x.className === "footmenu") {
     x.className = "responsive";

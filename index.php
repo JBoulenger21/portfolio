@@ -76,7 +76,7 @@ include('header.php');
                   <h5 class="card-title">Projet Explorateur de Fichiers</h5>
                   <p class="card-text">Développement d'un explorateur de fichiers style windows à l'aide de PHP.</p>
                   <div class="d-flex">
-                    <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary btncardprojet m-1">Repository GitHub</a>
+                    <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" rel="noreferrer noopener" class="btn btn-primary btncardprojet m-1">Repository GitHub</a>
                     <a href="projet.php#explofichiers" class="btn btn-primary btncardprojet m-1">En voir plus</a>
                   </div>
                 </div>
@@ -90,7 +90,7 @@ include('header.php');
                   <h5 class="card-title">Flappy Bird</h5>
                   <p class="card-text">Developpement d'un Flappy Bird en full Js.</p>
                   <div class="d-flex">
-                    <a href="https://github.com/JBoulenger21/FlappyBird" target="_blank" class="btn btn-primary btncardprojet">Repository GitHub</a>
+                    <a href="https://github.com/JBoulenger21/FlappyBird" target="_blank" rel="noreferrer noopener" class="btn btn-primary btncardprojet">Repository GitHub</a>
                     <a href="projet.php#flappybird" class="btn btn-primary btncardprojet m-1">En voir plus</a>
                   </div>
                 </div>
@@ -107,7 +107,7 @@ include('header.php');
                   <h5 class="card-title">Projet WordPress</h5>
                   <p class="card-text">Développement d'un site WordPress sur les inégalités des genres.</p>
                   <div class="d-flex">
-                    <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" class="btn btn-primary btncardprojet m-1">Repository GitHub</a>
+                    <a href="https://github.com/JBoulenger21/file_explorer" target="_blank" rel="noreferrer noopener" class="btn btn-primary btncardprojet m-1">Repository GitHub</a>
                     <a href="projet.php#laumaju" class="btn btn-primary btncardprojet m-1">En voir plus</a>
                   </div>
                 </div>
@@ -121,7 +121,7 @@ include('header.php');
                   <h5 class="card-title">Projet ACSCAPE</h5>
                   <p class="card-text">Début du développement d'un EscapeGame Managment System (EGMS) en mode projet.</p>
                   <div class="d-flex">
-                    <a href="https://github.com/ACSCAPE" target="_blank" class="btn btn-primary btncardprojet">Organisation GitHub</a>
+                    <a href="https://github.com/ACSCAPE" target="_blank" rel="noreferrer noopener" class="btn btn-primary btncardprojet">Organisation GitHub</a>
                     <a href="projet.php#acscape" class="btn btn-primary btncardprojet m-1">En voir plus</a>
                   </div>
                 </div>
@@ -135,7 +135,7 @@ include('header.php');
   <div class="container mt-3 contactform">
     <h2 id="contact">Contact</h2>
 
-    <form action="index.php" method="post">
+    <form action="index.php#contact" method="post">
       <div class="mb-3">
         <label class="form-label">Nom Prénom</label>
         <input type="text" class="form-control" name="nomContact" id="nomContact" required>
