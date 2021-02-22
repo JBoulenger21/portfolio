@@ -28,12 +28,12 @@ include('header.php');
           <h3 id="competences">Compétences</h3>
             <p class="textcomp">Cliquez sur une compétence</p>
           <div class="logoCompetences">
-            <img id="logohtml" src="ressources/logoHTML5.png" alt="logo HTML5">
-            <img id="logocss" src="ressources/logoCSS3.png" alt="logo CSS3">
-            <img id="logobootstrap" src="ressources/logobootstrap.png" alt="logo bootstrap">
-            <img id="logophp" src="ressources/logoPhp.png" alt="logo Php">
-            <img id="logowp" src="ressources/logoWordpress.png" alt="logo Wordpress">
-            <img id="logojs" src="ressources/js-logo.png" alt="logo Js">
+            <img id="logohtml" src="ressources/logoHTML5.png" onmouseover="this.src='ressources/logoHTML5nb.png'" onmouseout="this.src='ressources/logoHTML5.png'" alt="logo HTML5">
+            <img id="logocss" src="ressources/logoCSS3.png" onmouseover="this.src='ressources/logoCSS3nb.png'" onmouseout="this.src='ressources/logoCSS3.png'" alt="logo CSS3">
+            <img id="logobootstrap" src="ressources/logobootstrap.png" onmouseover="this.src='ressources/logobootstrapnb.png'" onmouseout="this.src='ressources/logobootstrap.png'" alt="logo bootstrap">
+            <img id="logophp" src="ressources/logoPhp.png" onmouseover="this.src='ressources/logoPhpnb.png'" onmouseout="this.src='ressources/logoPhp.png'" alt="logo Php">
+            <img id="logowp" src="ressources/logoWordpress.png" onmouseover="this.src='ressources/logoWordpressnb.png'" onmouseout="this.src='ressources/logoWordpress.png'" alt="logo Wordpress">
+            <img id="logojs" src="ressources/js-logo.png" onmouseover="this.src='ressources/js-logonb.png'" onmouseout="this.src='ressources/js-logo.png'" alt="logo Js">
           </div>
                 <br>
             <div class="btncompetence">
@@ -100,7 +100,6 @@ include('header.php');
                   <img class="iconeComp" src="ressources/logoHTML5nb.png" onmouseover="this.src='ressources/logoHTML5.png'" onmouseout="this.src='ressources/logoHTML5nb.png'" alt="logo HTML5">
                   <img class="iconeComp" src="ressources/logoCSS3nb.png" onmouseover="this.src='ressources/logoCSS3.png'" onmouseout="this.src='ressources/logoCSS3nb.png'" alt="logo CSS3">
                   <img class="iconeComp" src="ressources/logoWordpressnb.png" onmouseover="this.src='ressources/logoWordpress.png'" onmouseout="this.src='ressources/logoWordpressnb.png'" alt="logo WordPress">
-                  <img class="iconeComp" src="ressources/logoWordpressnb.png" onmouseover="this.src='ressources/logoWordpress.png'" onmouseout="this.src='ressources/logoWordpressnb.png'" alt="logo WordPress">
                 </div>
                 <img src="ressources/laumaju.png" class="card-img-top" alt="Aperçu projet WordPress">
                 <div class="card-body">
@@ -133,23 +132,25 @@ include('header.php');
     </div>
   </div>
   <div class="container mt-3 contactform">
+
+    <!-- Formulaire de contact -->
     <h2 id="contact">Contact</h2>
 
     <form action="index.php#contact" method="post">
       <div class="mb-3">
-        <label class="form-label">Nom Prénom</label>
+        <label class="form-label" for="nomContact">Nom Prénom</label>
         <input type="text" class="form-control" name="nomContact" id="nomContact" required>
       </div>
       <div class="mb-3">
-        <label class="form-label">Adresse Email</label>
+        <label class="form-label" for="emailContact">Adresse Email</label>
         <input type="email" class="form-control" name="emailContact" id="emailContact" required>
       </div>
       <div class="mb-3">
-        <label class="form-label">Sujet</label>
+        <label class="form-label" for="sujetContact">Sujet</label>
         <input type="text" class="form-control" name="sujetContact" id="sujetContact" required>
       </div>
       <div class="mb-3">
-        <label class="form-label">Votre message</label>
+        <label class="form-label" for="textContact">Votre message</label>
         <textarea class="form-control" name="textContact" id="textContact" rows="3" required></textarea>
       </div>
       <button type="submit" class="btn btnContact">Me contacter</button>
@@ -157,9 +158,14 @@ include('header.php');
   </div>
 </main>
 <div class="d-flex contact">
+
+
 <?php
+// Si les champs sont trouvés et ne sont pas vides :
 if(isset($_POST['nomContact']) && isset($_POST['emailContact']) && isset($_POST['sujetContact']) && isset($_POST['textContact'])){
   if (!empty($_POST['nomContact']) && !empty($_POST['emailContact']) && !empty($_POST['sujetContact']) && !empty($_POST['textContact'])){
+
+    //Mise des SuperGlobales POST dans des variables et vérification avec la function "Check" que j'ai initié moi-même
     $nom = $_POST['nomContact'];
     $nom = check($nom);
     $mail = $_POST['emailContact'];
@@ -182,7 +188,7 @@ if(isset($_POST['nomContact']) && isset($_POST['emailContact']) && isset($_POST[
           echo "<p>Veuillez renseigner tous les champs.</p>";
         }
 }
-
+// Function Check qui permet d'enlever les espaces devant et derrière, de supprimer les antislash et de convertir les caractères spéciaux en entités HTML
 function check($input){
   trim($input);
   stripslashes($input);
